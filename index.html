@@ -6,6 +6,10 @@
 <title>Aprendemos Juntos</title>
 <meta name="description" content="Libro y juegos tranquilos para niños y niñas con autismo (TEA). Comunicación, lectura, trazos, números y calma. Sin internet, sin anuncios.">
 <link rel="icon" href="favicon.png">
+<meta property="og:title" content="Aprendemos Juntos">
+<meta property="og:description" content="Libro de comunicación con las fotos de tu familia y 32 juegos tranquilos para niños con TEA.">
+<meta property="og:image" content="https://jlmdr5492-byte.github.io/libro/portada.jpg">
+<meta property="og:type" content="website">
 <style>
 :root { --bg: #EEF3F1; --surface: #FFFFFF; --ink: #23343A; --muted: #5D7176; --accent: #3E7F8C; --accent-soft: #D7E9EB; --line: #DDE5E7; --sol: #F2C230; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #152024; --surface: #1F2D33; --ink: #E5EEED; --muted: #A3B6B9; --accent: #7CC0CB; --accent-soft: #27414A; --line: #33464D; } }
@@ -31,6 +35,8 @@ section { padding: 30px 0; }
 .caja.destacada { border-color: var(--accent); background: var(--accent-soft); }
 ul.lista { margin: 0; padding-left: 1.2em; } ul.lista li + li { margin-top: 6px; }
 ol.pasos { margin: 0; padding-left: 1.3em; } ol.pasos li + li { margin-top: 8px; }
+.portada { display: block; width: 100%; max-width: 520px; height: auto; margin: 0 auto 22px; border-radius: 28px; box-shadow: 0 10px 30px rgba(35,52,58,.12); }
+.oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 footer { padding: 30px 0 40px; color: var(--muted); font-size: .95rem; text-align: center; }
 footer a, .caja a { color: var(--accent); }
 @media (max-width: 520px) { .btn { width: 100%; justify-content: center; } }
@@ -38,8 +44,8 @@ footer a, .caja a { color: var(--accent); }
 </head>
 <body>
 <header class="wrap">
-  <div style="font-size:3.2rem" aria-hidden="true">🌿📖🧩</div>
-  <h1>Aprendemos Juntos</h1>
+  <img class="portada" src="portada.jpg" width="900" height="900" alt="Un niño usa el tablero Quiero decir en la tablet, acompañado por su mamá y la mascota Lumi. Aprendemos Juntos: 32 juegos tranquilos para niños con TEA.">
+  <h1 class="oculto">Aprendemos Juntos</h1>
   <p class="lema">Un libro de comunicación con las fotos de tu familia y 32 juegos tranquilos para niños y niñas con autismo (TEA).</p>
   <div class="botones">
     <a class="btn primario" href="#libro">📖 El libro</a>
