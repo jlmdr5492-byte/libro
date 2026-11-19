@@ -39,6 +39,9 @@ ol.pasos { margin: 0; padding-left: 1.3em; } ol.pasos li + li { margin-top: 8px;
 .oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 footer { padding: 30px 0 40px; color: var(--muted); font-size: .95rem; text-align: center; }
 footer a, .caja a { color: var(--accent); }
+.galeria { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(170px, 210px); gap: 12px; overflow-x: auto; padding: 4px 2px 12px; scroll-snap-type: x mandatory; }
+.galeria a { scroll-snap-align: start; display: block; border-radius: 14px; overflow: hidden; border: 2px solid var(--line); background: #fff; }
+.galeria img { display: block; width: 100%; height: auto; aspect-ratio: 640 / 905; }
 @media (max-width: 520px) { .btn { width: 100%; justify-content: center; } }
 </style>
 </head>
@@ -75,6 +78,19 @@ footer a, .caja a { color: var(--accent); }
         <div class="tarjeta"><div class="e">📚</div><h3>Más de 120 páginas</h3><p>Rutinas, necesidades, acciones, emociones, salud, escuela, salidas y autodefensa.</p></div>
         <div class="tarjeta"><div class="e">🖨️</div><h3>PDF para imprimir</h3><p>Para imprimir o usar en la tablet.</p></div>
       </div>
+      <h3 style="margin:20px 0 4px">Mira una muestra</h3>
+      <p style="margin:0 0 10px;color:var(--muted)">Así se ve el libro de Sofía. Desliza para ver más páginas; con el celular puedes escanear el código y escuchar la oración.</p>
+      <div class="galeria" role="list">
+        <a role="listitem" href="muestra/muestra-1.webp" target="_blank" rel="noopener"><img src="muestra/muestra-1.webp" width="640" height="905" loading="lazy" alt="Portada: Para Sofía"></a>
+        <a role="listitem" href="muestra/muestra-2.webp" target="_blank" rel="noopener"><img src="muestra/muestra-2.webp" width="640" height="905" loading="lazy" alt="Pictogramas de rutinas del día: mañana, despertar, ducha, dientes, vestirme"></a>
+        <a role="listitem" href="muestra/muestra-3.webp" target="_blank" rel="noopener"><img src="muestra/muestra-3.webp" width="640" height="905" loading="lazy" alt="Página: Sofía se ducha, con su foto, el pictograma y un código QR"></a>
+        <a role="listitem" href="muestra/muestra-4.webp" target="_blank" rel="noopener"><img src="muestra/muestra-4.webp" width="640" height="905" loading="lazy" alt="Página: Sofía desayuna con mamá"></a>
+        <a role="listitem" href="muestra/muestra-5.webp" target="_blank" rel="noopener"><img src="muestra/muestra-5.webp" width="640" height="905" loading="lazy" alt="Pictogramas de necesidades básicas: agua, comida, baño, ayuda, dolor, cansado"></a>
+        <a role="listitem" href="muestra/muestra-6.webp" target="_blank" rel="noopener"><img src="muestra/muestra-6.webp" width="640" height="905" loading="lazy" alt="Página: Sofía quiere un abrazo de mamá"></a>
+      </div>
+      <div class="botones" style="justify-content:flex-start;margin-top:6px">
+        <a class="btn" href="muestra/muestra-libro.pdf" target="_blank" rel="noopener">📄 Ver muestra en PDF (21 páginas)</a>
+      </div>
       <h3 style="margin:18px 0 6px">Cómo lo pides</h3>
       <ol class="pasos">
         <li>Escríbenos por WhatsApp con el nombre de tu peque y las fotos de la familia.</li>
@@ -91,7 +107,7 @@ footer a, .caja a { color: var(--accent); }
 
   <section id="juegos">
     <h2>🧩 Los juegos</h2>
-    <p style="margin:0 0 6px;color:var(--muted)">Pruébalos gratis en el navegador. La versión completa se compra en Hotmart y llega al instante a tu correo.</p>
+    <p style="margin:0 0 6px;color:var(--muted)">Pruébalos gratis en el navegador. La versión completa se compra en Hotmart (Yape, tarjeta, PagoEfectivo o PayPal) y llega al instante a tu correo.</p>
     <p style="margin:0 0 14px;font-size:1.3rem"><b>Precio de lanzamiento: S/ 29 (luego S/ 39)</b></p>
     <div class="botones" style="justify-content:flex-start;margin-bottom:18px">
       <a class="btn primario" href="demo/">▶️ Probar gratis</a>
@@ -136,7 +152,7 @@ footer a, .caja a { color: var(--accent); }
     <div class="caja">
       <ul class="lista">
         <li><b>Libro:</b> se pide por WhatsApp porque se arma con las fotos de tu familia. Pago por Yape o Plin.</li>
-        <li><b>Juegos:</b> se compran en Hotmart con tarjeta. Llega un correo con el acceso, se descarga y funciona sin internet en computadora o tablet Android.</li>
+        <li><b>Juegos:</b> se compran en Hotmart con Yape, tarjeta de débito o crédito (hasta en cuotas), PagoEfectivo o PayPal. Llega un correo con el acceso, se descarga y funciona sin internet en computadora o tablet Android.</li>
         <li><b>Pack:</b> escríbenos por WhatsApp y te enviamos el libro y el acceso a los juegos.</li>
       </ul>
     </div>
